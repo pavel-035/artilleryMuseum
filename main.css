@@ -16,7 +16,7 @@ ul, li, button, a, h1, h2, p {
 }
 
 .box {
-  max-width: 1300px;
+  max-width: 1230px;
   width: 100%;
   padding: 0 30px;
   margin: 0 auto;
@@ -103,8 +103,49 @@ ul, li, button, a, h1, h2, p {
   margin-bottom: 15px;
   font-size: 21px;
 }
-.info_item a {
+.info_link {
   color: #000;
+  transition: 0.5s;
+}
+.info_link:hover {
+  color: #e9d445;
+  transition: 0.5s;
+}
+
+.navigation {
+  background: #a3a3a3;
+}
+.navigation_box {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.navigation_item {
+  position: relative;
+  padding: 0 40px;
+}
+.navigation_item:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  left: 0;
+  width: 3px;
+  background: #e9d445;
+}
+.navigation_item:first-child:before {
+  display: none;
+}
+.navigation_link {
+  text-transform: lowercase;
+  font-size: 25px;
+  line-height: 1.2em;
+  color: #000;
+  transition: 0.5s;
+}
+.navigation_link:hover {
+  color: #e9d445;
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=main.css.map */

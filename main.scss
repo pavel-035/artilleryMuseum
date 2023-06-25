@@ -6,6 +6,7 @@
 
 $main_font: 'DINCondensed';
 $main_color: #843428;
+$active_color: #e9d445;
 
 * {
   margin: 0;
@@ -21,7 +22,7 @@ ul, li, button, a, h1, h2, p {
 }
 
 .box {
-  max-width: 1300px;
+  max-width: 1230px;
   width: 100%;
   padding: 0 30px;
   margin: 0 auto;
@@ -112,8 +113,54 @@ ul, li, button, a, h1, h2, p {
     color: #000;
     margin-bottom: 15px;
     font-size: 21px;
-    a {
-      color: #000;
+  }
+  &_link {
+    color: #000;
+    transition: 0.5s;
+    &:hover {
+      color: $active_color;
+      transition: 0.5s;
+    }
+  }
+}
+
+.navigation {
+  background: #a3a3a3;
+  &_box {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  &_item {
+    position: relative;
+    padding: 0 40px;
+
+    &:before {
+      content: "";
+
+      position: absolute;
+      top: 2px;
+      bottom: 2px;
+      left: 0;
+
+      width: 3px;
+      background: $active_color;
+    }
+    &:first-child {
+      &:before {
+        display: none;
+      }
+    }
+  }
+  &_link {
+    text-transform: lowercase;
+    font-size: 25px;
+    line-height: 1.2em;
+    color: #000;
+    transition: 0.5s;
+    &:hover {
+      color: $active_color;
+      transition: 0.5s;
     }
   }
 }
