@@ -129,7 +129,8 @@ ul, li, button, a, h1, h2, p {
   &_box {
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   &_item {
     position: relative;
@@ -160,6 +161,39 @@ ul, li, button, a, h1, h2, p {
     transition: 0.5s;
     &:hover {
       color: $active_color;
+      transition: 0.5s;
+    }
+  }
+}
+
+.footer {
+  background: rgba(209,209,209,.7);
+  &_box {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  &_section {
+    display: flex;
+  }
+  &_navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 400px;
+    width: 100%;
+    margin-left: 100px;
+  }
+  &_item {
+    margin-bottom: 10px;
+  }
+  &_link {
+    color: $main_color;
+    font-size: 21px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    transition: 0.5s;
+    &:hover {
+      color: #000;
       transition: 0.5s;
     }
   }
